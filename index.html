@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <style></style>
+</head>
+<body>
+    <div class="page">
+
+        <div class="exp">
+            <input class="input" placeholder="será usado querySelector"></input>
+            <button onclick="exemplo_1(this)">exemplo 1</button>
+        </div>
+
+        <div class="exp">
+            <input class="input" placeholder="será usado querySelectorAll"></input>
+            <input class="input" placeholder="será usado querySelectorAll"></input>
+            <input class="input" placeholder="será usado querySelectorAll"></input>
+            <button onclick="exemplo_2(this)">exemplo 2</button>
+        </div>
+
+        <div class="exp">
+            <input class="input" placeholder="será usado getElementsByClassName"></input>
+            <input class="input" placeholder="será usado getElementsByClassName"></input>
+            <input class="input" placeholder="será usado getElementsByClassName"></input>
+            <button onclick="exemplo_3(this)">exemplo 3</button>
+        </div>
+
+        <div class="exp">
+            <p><strong>exemplo 4</strong></p>
+            <div onclick="exemplo_4(this)" class="click_box">innerText da <strong>primeira</strong> div</div>
+            <div onclick="exemplo_4(this)" class="click_box">innerText da <strong>segunda</strong> div</div>
+            <div onclick="exemplo_4(this)" class="click_box">innerText da <strong>terceira</strong> div</div>
+        </div>
+
+        <div class="exp">
+            <p><strong>exemplo 5</strong></p>
+            <div onclick="exemplo_5(this)" class="click_box">textContent da div
+                <p style="display: none">(essa div tem uma tag p escondida com style="display: none")</p>
+            </div>
+        </div>
+
+        <div class="exp">
+            <p><strong>exemplo 6</strong></p>
+            <button onclick="exemplo_6()">uso da propriedade createElement</button>
+        </div>
+
+    </div>
+
+    <div>
+        <button onclick="exemplo_7(this)">exemplo 7 (todos os inputs)</button>
+        <button onclick="exemplo_8()">exemplo 8 (uso do objeto window)</button>
+    </div>
+
+    <hr style="width: 100%">
+    <div id="content_screen" class="exp">
+        <p><strong>todo esse innerHTML será alterado</strong></p>
+        <p>texto de uma tag p</p>
+        <p>texto de outra tag p</p>
+        <p>texto de mais outra tag p</p>
+        <p>texto de mais outra tag p de novo</p>
+    </div>
+    <button style="margin-top: -18px;" onclick="reset_innerHTML()">mudar o innerHTML da div acima para seu estado inicial</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
