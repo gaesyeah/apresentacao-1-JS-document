@@ -109,10 +109,10 @@ function exemplo_6() {
 //aqui usei querySelectorAll para selecionar todos os inputs da página
 function exemplo_7() {
     //guarda_nodes vai conter um nodeList
-    guarda_nodes = document.querySelectorAll('.input');
+    const guarda_nodes = document.querySelectorAll('.input');
     console.log(guarda_nodes);
     //guarda_inputs vai conter um array, a conversão da nodeList
-    guarda_inputs = Array.from(guarda_nodes);
+    const guarda_inputs = Array.from(guarda_nodes);
     console.log(guarda_inputs);
     //altera o todo o innerHTML da div com classe content_screen com os values dos inputs guardados na guarda_inputs
     const alterar_div = document.getElementById('content_screen');
