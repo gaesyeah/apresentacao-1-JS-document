@@ -18,7 +18,7 @@ function exemplo_1(clicked) {
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //aqui usei this para pegar a div pai; querySelectorALL para pegar os inputs; e querySelector para acessar a div identificada por um id a ter seu innerHTML alterado
-function exemplo_2(clicked) {
+/* function exemplo_2(clicked) {
     //guarda_nodes vai conter uma nodeList
     const guarda_nodes = clicked.parentNode.querySelectorAll('.input');
     console.log(guarda_nodes);
@@ -32,9 +32,9 @@ function exemplo_2(clicked) {
         alterar_div.innerHTML += `${i.value}<br>`;
         i.value = "";
     });
-}
+} */
 //caso a nodeList não tivesse sido convertida para um array:
-/* function exemplo_2(clicked) {
+function exemplo_2(clicked) {
     const guarda_inputs = clicked.parentNode.querySelectorAll('.input');
     //guarda_inputs vai conter uma nodeList
     console.log(guarda_inputs);
@@ -48,7 +48,7 @@ function exemplo_2(clicked) {
         alterar_div.innerHTML += `${i}<br>`;
     });
     guarda_inputs.forEach( i => {i.value = ""});
-} */
+}
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -68,7 +68,10 @@ function exemplo_3(clicked) {
         i.value = "";
     });
 }
-
+/*Em resumo, a diferença principal entre NodeList e HTMLCollection é que a NodeList 
+pode conter qualquer tipo de nó no documento, enquanto o HTMLCollection contém apenas 
+elementos HTML. Além disso, o HTMLCollection é atualizado automaticamente em tempo real,
+enquanto a NodeList é atualizada apenas quando você acessa seus elementos*/
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //aqui usei o this para utilizar o InnerText da tag
